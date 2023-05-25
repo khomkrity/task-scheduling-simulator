@@ -1,0 +1,15 @@
+
+O
+java:S1068"2Remove this unused "sendingLatency" private field.(¡ûÝº8ô¬åæƒ1
+V
+java:S1068"4Remove this unused "receivingLatency" private field.(«ŸÙªøÿÿÿÿ8ô¬åæƒ1
+Q
+java:S1068"4Remove this unused "startSendingTime" private field.(Ñãñ«8¸Ëãæƒ1
+R
+java:S1068"5Remove this unused "finishSendingTime" private field.(û™Í•8¹Ëãæƒ1
+X
+java:S1068"6Remove this unused "startReceivingTime" private field.(Žü½Àúÿÿÿÿ8»Ëãæƒ1
+T
+java:S1068"7Remove this unused "finishReceivingTime" private field.(Ó„‰ù8»Ëãæƒ1
+J
+java:S1068"-Remove this unused "readyTime" private field.(ßžÇ¡8Ñ„ææƒ1

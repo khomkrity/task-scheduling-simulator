@@ -1,0 +1,14 @@
+
+m
+java:S1301P"KReplace this "switch" statement by "if" statements to increase readability.(ˆòÚşÿÿÿÿ8Óø”‚1
+O
+java:S2755K"3Disable access to external entities in XML parsing.(ŒüÄD8øø”‚1
+
+java:S1186È"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(«)8ùø”‚1
+C	java:S131P""Add a default case to this switch.(ˆòÚşÿÿÿÿ8€ù”‚1
+P
+java:S1172œ"2Remove this unused method parameter "useMockData".(ĞüğŸ8Ô·•‚1
+U
+java:S1172ì"2Remove this unused method parameter "useMockData".(Ö¯Õÿÿÿÿÿ8ÅÉ–‚1
+Y
+java:S1144È"<Remove this unused private "addMockComputationCosts" method.(«)8ù”‚1
