@@ -1,4 +1,5 @@
 # Default ignored files
 /shelf/
 /.idea/workspace.xml
-/src/main/resources/workflow/
+/src/main/resources/workflow/*
+/src/main/resources/result/*
