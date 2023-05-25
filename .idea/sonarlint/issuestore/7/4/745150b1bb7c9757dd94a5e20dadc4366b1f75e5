@@ -1,0 +1,15 @@
+
+t
+java:S6204i"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(Æ—éšøÿÿÿÿ8Å…É„1
+>
+java:S1116n"Remove this empty statement.(Åñ­õşÿÿÿÿ8Ç…É„1
+Y	java:S125È"<This block of commented-out lines of code should be removed.(Â…ˆ¢8Í…É„1
+Y	java:S125€"<This block of commented-out lines of code should be removed.(òƒ²8Ğ…É„1
+Y	java:S125Æ"<This block of commented-out lines of code should be removed.(à¸ƒ8Ó…É„1
+^	java:S125ë"<This block of commented-out lines of code should be removed.(ò¢şéşÿÿÿÿ8Ô…É„1
+^
+java:S1128	"BRemove this unused import 'com.mfu.taskscheduling.util.Workflows'.(×®İQ8•—À„1
+S
+java:S1068"6Remove this unused "allocatedTimeSlots" private field.(è›ğ½8Õ…É„1
+U
+java:S1144 "2Remove this unused private "allocateTasks" method.(Æ“¥™ùÿÿÿÿ8Õ…É„1
