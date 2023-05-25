@@ -3,3 +3,4 @@
 /.idea/workspace.xml
 /src/main/resources/workflow/*
 /src/main/resources/result/*
+/src/main/resources/backup/
