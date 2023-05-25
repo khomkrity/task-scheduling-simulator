@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setting>
+    <!-- 1:3 cloud:fog ratio-->
+    <constraint portConstraint="false" pseudoTask="true" mockData="false" fullEnergy="10.0" remainingEnergy="10.0" lowestAcceptableEnergy="10.0"/>
+    <scenario name="4-processor">
+        <device name="cloud">
+            <host name="host-1" mips="35000" cost="2.0" bandwidth="100"/>
+        </device>
+        <device name="fog">
+            <host name="host-1" mips="2500" cost="0.5" bandwidth="650"/>
+            <host name="host-2" mips="2800" cost="0.5" bandwidth="700"/>
+            <host name="host-3" mips="3000" cost="0.5" bandwidth="800"/>
+        </device>
+    </scenario>
+    <scenario name="8-processor">
+        <device name="cloud">
+            <host name="host-1" mips="35000" cost="2.0" bandwidth="100"/>
+            <host name="host-2" mips="40000" cost="2.0" bandwidth="100"/>
+
+        </device>
+        <device name="fog">
+            <host name="host-1" mips="2500" cost="0.5" bandwidth="650"/>
+            <host name="host-2" mips="2800" cost="0.5" bandwidth="700"/>
+            <host name="host-3" mips="3000" cost="0.5" bandwidth="800"/>
+            <host name="host-4" mips="2800" cost="0.5" bandwidth="620"/>
+            <host name="host-5" mips="2700" cost="0.5" bandwidth="770"/>
+            <host name="host-6" mips="3500" cost="0.5" bandwidth="850"/>
+        </device>
+    </scenario>
+    <scenario name="16-processor">
+        <device name="cloud">
+            <host name="host-1" mips="35000" cost="2.0" bandwidth="100"/>
+            <host name="host-2" mips="40000" cost="2.0" bandwidth="100"/>
+            <host name="host-3" mips="38000" cost="2.0" bandwidth="100"/>
+            <host name="host-4" mips="45000" cost="2.0" bandwidth="100"/>
+
+        </device>
+        <device name="fog">
+            <host name="host-1" mips="2500" cost="0.5" bandwidth="650"/>
+            <host name="host-2" mips="2800" cost="0.5" bandwidth="700"/>
+            <host name="host-3" mips="3000" cost="0.5" bandwidth="800"/>
+            <host name="host-4" mips="2800" cost="0.5" bandwidth="620"/>
+            <host name="host-5" mips="2700" cost="0.5" bandwidth="770"/>
+            <host name="host-6" mips="3500" cost="0.5" bandwidth="850"/>
+            <host name="host-7" mips="4000" cost="0.5" bandwidth="720"/>
+            <host name="host-8" mips="4200" cost="0.5" bandwidth="650"/>
+            <host name="host-9" mips="3200" cost="0.5" bandwidth="700"/>
+            <host name="host-10" mips="5000" cost="0.5" bandwidth="820"/>
+            <host name="host-11" mips="3700" cost="0.5" bandwidth="700"/>
+            <host name="host-12" mips="4300" cost="0.5" bandwidth="750"/>
+        </device>
+    </scenario>
+    <scenario name="32-processor">
+        <device name="cloud">
+            <host name="host-1" mips="35000" cost="2.0" bandwidth="100"/>
+            <host name="host-2" mips="40000" cost="2.0" bandwidth="100"/>
+            <host name="host-3" mips="38000" cost="2.0" bandwidth="100"/>
+            <host name="host-4" mips="45000" cost="2.0" bandwidth="100"/>
+            <host name="host-5" mips="35000" cost="2.0" bandwidth="100"/>
+            <host name="host-6" mips="40000" cost="2.0" bandwidth="100"/>
+            <host name="host-7" mips="38000" cost="2.0" bandwidth="100"/>
+            <host name="host-8" mips="45000" cost="2.0" bandwidth="100"/>
+        </device>
+        <device name="fog">
+            <host name="host-1" mips="2500" cost="0.5" bandwidth="650"/>
+            <host name="host-2" mips="2800" cost="0.5" bandwidth="700"/>
+            <host name="host-3" mips="3000" cost="0.5" bandwidth="800"/>
+            <host name="host-4" mips="2800" cost="0.5" bandwidth="620"/>
+            <host name="host-5" mips="2700" cost="0.5" bandwidth="770"/>
+            <host name="host-6" mips="3500" cost="0.5" bandwidth="850"/>
+            <host name="host-7" mips="4000" cost="0.5" bandwidth="720"/>
+            <host name="host-8" mips="4200" cost="0.5" bandwidth="650"/>
+            <host name="host-9" mips="3200" cost="0.5" bandwidth="700"/>
+            <host name="host-10" mips="5000" cost="0.5" bandwidth="820"/>
+            <host name="host-11" mips="3700" cost="0.5" bandwidth="700"/>
+            <host name="host-12" mips="4300" cost="0.5" bandwidth="750"/>
+            <host name="host-13" mips="2500" cost="0.5" bandwidth="630"/>
+            <host name="host-14" mips="2800" cost="0.5" bandwidth="750"/>
+            <host name="host-15" mips="3000" cost="0.5" bandwidth="870"/>
+            <host name="host-16" mips="2800" cost="0.5" bandwidth="670"/>
+            <host name="host-17" mips="2700" cost="0.5" bandwidth="750"/>
+            <host name="host-18" mips="3500" cost="0.5" bandwidth="800"/>
+            <host name="host-19" mips="4000" cost="0.5" bandwidth="600"/>
+            <host name="host-20" mips="4200" cost="0.5" bandwidth="650"/>
+            <host name="host-21" mips="3200" cost="0.5" bandwidth="820"/>
+            <host name="host-22" mips="5000" cost="0.5" bandwidth="750"/>
+            <host name="host-23" mips="3700" cost="0.5" bandwidth="720"/>
+            <host name="host-24" mips="4300" cost="0.5" bandwidth="600"/>
+        </device>
+    </scenario>
+</setting>
