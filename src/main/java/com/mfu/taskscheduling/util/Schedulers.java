@@ -69,6 +69,7 @@ public class Schedulers {
 
                 currentProcessor.setReadyTime(finishReceivingTime);
                 currentProcessor.addRunningTime(computationCost);
+
             } else {
                 currentTask.setStartTime(earliestStartTime);
                 currentTask.setFinishTime(finishTime);
@@ -120,60 +121,6 @@ public class Schedulers {
         }
 
         return maxFinishTime;
-    }
-
-    /**
-     * Finds a time slot that avoids port collisions between the given task and other tasks already scheduled,
-     * and reserves the available time slot.
-     *
-     * @param allocatedTimeSlots A set of time slots already allocated to other tasks.
-     * @param actualReadyTime    The original estimated start time for the task.
-     * @param finishTime         The estimated finish time for the task.
-     * @param sendingLatency     The time taken to send data from this task to another task.
-     * @param receivingLatency   The time taken to receive data from another task to this task.
-     * @param allocateTimeSlot   A boolean indicating whether to allocate the new ready time with no port collision into the timeslot
-     * @return The updated estimated start time for the task.
-     */
-    public static double avoidPortCollisions(NavigableSet<Double> allocatedTimeSlots, double actualReadyTime, double finishTime, double sendingLatency, double receivingLatency, boolean allocateTimeSlot) {
-        actualReadyTime = avoidPortCollision(allocatedTimeSlots, actualReadyTime, finishTime, sendingLatency);
-        actualReadyTime = avoidPortCollision(allocatedTimeSlots, actualReadyTime, finishTime, receivingLatency);
-        if (allocateTimeSlot) {
-            allocatedTimeSlots.add(actualReadyTime);
-            allocatedTimeSlots.add(finishTime);
-        }
-        return actualReadyTime;
-    }
-
-
-    /**
-     * Finds a time slot that avoids port collisions between the given task and other tasks already scheduled,
-     * and returns the updated estimated start time for the task.
-     *
-     * @param allocatedTimeSlots A set of time slots already allocated to other tasks.
-     * @param startTime          The original estimated start time for the task.
-     * @param finishTime         The estimated finish time for the task.
-     * @param latency            The time taken to send or receive data from another task.
-     * @return The updated estimated start time for the task.
-     */
-    private static double avoidPortCollision(NavigableSet<Double> allocatedTimeSlots, double startTime, double finishTime, double latency) {
-        if (allocatedTimeSlots.isEmpty() || latency <= 0) return startTime;
-
-        Double closestStartTime;
-        Double closestFinishTime;
-        boolean hasTimeOverlap;
-
-        do {
-            closestStartTime = allocatedTimeSlots.floor(startTime);
-            closestFinishTime = allocatedTimeSlots.ceiling(finishTime);
-            hasTimeOverlap = closestStartTime != null && Math.abs(startTime - closestStartTime) < 1.0 || closestFinishTime != null && Math.abs(finishTime - closestFinishTime) < 1.0;
-
-            if (hasTimeOverlap) {
-                startTime += latency;
-                finishTime += latency;
-            }
-        } while (hasTimeOverlap);
-
-        return startTime;
     }
 
     /**
